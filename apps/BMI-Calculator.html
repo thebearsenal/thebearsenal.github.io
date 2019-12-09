@@ -8,6 +8,7 @@
         <meta name="author" content="Dipin P Joseph">
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm:700">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -28,9 +29,74 @@
        	   	enable_page_level_ads: true
      	});
 	</script>
-        <link rel="icon" href="img/logo.png">
+        <link rel="icon" href="../img/logo.png">
+	<style>
+		p    {font-family: 'Times New Roman', Times, serif;}
+		label    {font-family: 'Times New Roman', Times, serif;}
+		h2    {font-family: 'Times New Roman', Times, serif;}
+		h4    {font-family: 'Times New Roman', Times, serif;}
+	</style>
     </head>
-    <body>
+<body style="">
+    <div class="container">
+	<br>
+        <div class="row">
+		<header>
+			<div class="container-fluid">
+				<h1 style="font-family: 'charm', serif; font-size:4vw;"><small><a href="https://www.thebearsenal.com">TheBeArsenal</a></small></h1>
 
-    </body>
+        			<hr style="background-color:#259fea">
+
+			</div>
+			
+		</header>
+	</div>
+	<div class="row">
+		<div class="col-sm-9">
+
+			<h2>Online BMI Calculator</h2>
+			<hr style="background-color:#259fea">
+			<p>BMI ()</p>
+			<form>
+    				<div class="form-group col-sm-12">
+				<div class="row">
+					<div class="col-sm-4">
+      						<label for="height">Height in CMs:</label>
+				      		<input type="text" class="form-control" id="height">
+					</div>
+					<div class="col-sm-4">
+      						<label for="weight">Weight in CMs:</label>
+				      		<input type="text" class="form-control" id="weight">
+					</div>
+					<div class="col-sm-4">
+      						<br>
+				      		<button type="button" id="cal" class="btn">Calculate BMI</button>
+					</div>
+				</div>
+				</div>
+			</form>
+			<hr style="background-color:#259fea">
+			<div>
+				<h4>Result:</h4>
+				<p id="result"></p>
+			</div>		
+			<hr style="background-color:#259fea">
+			<div >
+				<h4>Points to remember:</h4>
+
+			</div>
+			
+		</div>
+		<div class="col-sm-1" style="border-left: 1px solid #259fea; ">
+		<div class="col-sm-2">
+		</div>
+	</div>
+
+    </div>
+    <footer class="page-footer">
+        <div class="footer-copyright text-center py-3" style="font-family: 'Times New Roman', Times, serif;">© 2019 Copyright:
+            <a href="https://www.thebearsenal.com" style="font-family: 'Times New Roman', Times, serif;"> The Beginner's Arsenal</a>
+        </div>
+    </footer>
+</body>
 </html>
