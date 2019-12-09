@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>The Beginner's Arsenal</title>
-        <meta charset="utf-8">
+<head>
+    <title>The Beginner's Arsenal</title>
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="BMI calculator online from height and weight">
-        <meta name="author" content="Dipin P Joseph">
+    <meta name="description" content="BMI calculator online from height and weight">
+    <meta name="author" content="Dipin P Joseph">
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm:700">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<!-- Global Site Tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33383432-3"></script>
-		<script>
-	  		window.dataLayer = window.dataLayer || [];
-	  		function gtag(){dataLayer.push(arguments);}
-	  		gtag('js', new Date());
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33383432-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 	
-	  		gtag('config', 'UA-33383432-3');
-		</script>
+		gtag('config', 'UA-33383432-3');
+	</script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
      	(adsbygoogle = window.adsbygoogle || []).push({
@@ -36,62 +36,102 @@
 		h2    {font-family: 'Times New Roman', Times, serif;}
 		h4    {font-family: 'Times New Roman', Times, serif;}
 	</style>
-    </head>
+	<script>
+		function bmi_calculator() {
+			let w = document.getElementById("weight").value
+			let h = document.getElementById("height").value/100
+			let bmi = w/(h*h)
+			document.getElementById("result").innerHTML = "BMI Index = "+Math.round(bmi*1000)/1000;
+		}
+	</script>
+</head>
 <body style="">
     <div class="container">
-	<br>
+		<br>
         <div class="row">
-		<header>
-			<div class="container-fluid">
-				<h1 style="font-family: 'charm', serif; font-size:4vw;"><small><a href="https://www.thebearsenal.com">TheBeArsenal</a></small></h1>
-
+			<header>
+				<div class="container-fluid">
+					<h1 style="font-family: 'charm', serif; font-size:4vw;"><small><a href="https://www.thebearsenal.com">TheBeArsenal</a></small></h1>
         			<hr style="background-color:#259fea">
 
-			</div>
-			
-		</header>
-	</div>
-	<div class="row">
-		<div class="col-sm-9">
+				</div>			
+			</header>
+		</div>
+		<div class="row">
+			<div class="col-sm-9">
 
-			<h2>Online BMI Calculator</h2>
-			<hr style="background-color:#259fea">
-			<p>BMI ()</p>
-			<form>
+				<h2>Online BMI Calculator</h2>
+				<hr style="background-color:#259fea">
+				<p>BMI or Body Mass Index is a mathematical relationship between a person's weight and height. BMI measure indicates the health status of that particular person.</p>
+				<p>Formula for BMI - Weight(kgs)/sq. Height(m^2)</p>
+				<form>
     				<div class="form-group col-sm-12">
+						<div class="row">
+							<div class="col-sm-4">
+      							<label for="height">Height in CMs:</label>
+				      			<input type="number" class="form-control" id="height">
+							</div>
+							<div class="col-sm-4">
+      							<label for="weight">Weight in KGs:</label>
+				      			<input type="number" class="form-control" id="weight">
+							</div>
+							<div class="col-sm-4">
+      							<br>
+				      			<button type="button" id="cal" class="btn" onclick="bmi_calculator();"> Calculate BMI</button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<hr style="background-color:#259fea">
+				<div>
+					<h4>Result:</h4>
+					<p id="result"></p>
+				</div>		
+				<hr style="background-color:#259fea">
+				<div >
+					<h4>Check how healthy you are:</h4>
+					<p>
+						Below 18.5	-> UnderWeight <br>
+						18.5 - 24.9	-> Healthy <br>
+						25 - 29.9	-> OverWeight <br>
+						30 & Above	-> Obese
+					</p>
+				</div>
+				<hr style="background-color:#259fea">
 				<div class="row">
-					<div class="col-sm-4">
-      						<label for="height">Height in CMs:</label>
-				      		<input type="text" class="form-control" id="height">
+					<div class="col-2">
+						<a href="https://github.com/dipinpjoseph" target="_blank"><i class="fa fa-github"
+								style="font-size:40px;"></i></a>
 					</div>
-					<div class="col-sm-4">
-      						<label for="weight">Weight in CMs:</label>
-				      		<input type="text" class="form-control" id="weight">
+					<div class="col-2">
+						<a href="https://www.linkedin.com/in/dipinpjoseph/" target="_blank"><i class="fa fa-linkedin-square"
+								style="font-size:40px;"></i></a>
 					</div>
-					<div class="col-sm-4">
-      						<br>
-				      		<button type="button" id="cal" class="btn">Calculate BMI</button>
+					<div class="col-2">
+						<a href="https://twitter.com/thebearsenal" target="_blank"><i class="fa fa-twitter"
+								style="font-size:40px;"></i></a>
+					</div>
+					<div class="col-2">
+						<a href="https://www.instagram.com/thebearsenal/" target="_blank"><i class="fa fa-instagram"
+								style="font-size:40px;"></i></a>
+					</div>
+					<div class="col-2">
+						<a href="https://www.facebook.com/TheBeArsenal/" target="_blank"><i class="fa fa-facebook-square"
+								style="font-size:40px;"></i></a>
+					</div>
+					<div class="col-2">
+						<a href="https://www.youtube.com/channel/UCvfjHPhi9Db_tFZKIbje2zw/" target="_blank"><i
+								class="fa fa-youtube-square" style="font-size:40px;"></i></a>
 					</div>
 				</div>
-				</div>
-			</form>
-			<hr style="background-color:#259fea">
-			<div>
-				<h4>Result:</h4>
-				<p id="result"></p>
-			</div>		
-			<hr style="background-color:#259fea">
-			<div >
-				<h4>Points to remember:</h4>
-
+				<hr style="background-color:#259fea">
 			</div>
-			
-		</div>
-		<div class="col-sm-1" style="border-left: 1px solid #259fea; ">
-		<div class="col-sm-2">
-		</div>
-	</div>
+			<div class="col-sm-1" style="border-left: 1px solid #259fea; ">
+			<div class="col-sm-2">
+			</div>
 
+		</div>
+		
     </div>
     <footer class="page-footer">
         <div class="footer-copyright text-center py-3" style="font-family: 'Times New Roman', Times, serif;">© 2019 Copyright:
