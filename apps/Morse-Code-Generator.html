@@ -39,7 +39,7 @@
 	</style>
 	<script>
 		function morse_gen() {
-			let io_text = document.getElementById("io_data").value.split('');
+			let io_text = document.getElementById("io_data").value.toLowerCase().split('');
 			document.getElementById("morse_code_op").innerHTML  = ""
 			let con = ""
 			for (let each of io_text){
