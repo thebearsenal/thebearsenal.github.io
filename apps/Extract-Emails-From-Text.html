@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Extract Phone nos, Emails from Text Online</title>
+    <title>Extract Emails from Text Online</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BMI calculator online from height and weight">
@@ -39,10 +39,8 @@
 		h4    {font-family: 'Times New Roman', Times, serif;}
 	</style>
 	<script>
-		function bmi_calculator() {
-			let w = document.getElementById("weight").value
-			let h = document.getElementById("height").value/100
-			let bmi = w/(h*h)
+		function extract() {
+
 			document.getElementById("result").innerHTML = "BMI Index = "+Math.round(bmi*1000)/1000;
 		}
 	</script>
@@ -62,10 +60,10 @@
 		<div class="row">
 			<div class="col-sm-9">
 
-				<h3>Extract Emails and Phone Numbers from Text</h3>
+				<h3>Extract Emails from Text</h3>
 				<hr style="background-color:#259fea">
 				<p>Dealing with unformatted text data is always time consuming. With the help of this application you can extract contact details
-                      like Emails, Phone Numbers from a piece of text.</p>
+                      like Emails from a piece of text.</p>
 
                 <hr style="background-color:#259fea">
 
@@ -80,10 +78,6 @@
                 <h4>Emails Found:</h4>
                 <p id="email_op"></p>
 
-                <hr style="background-color:#259fea">
-
-                <h4>Phone Numbers Found:</h4>
-                <p id="ph_op"></p>
 
 				<hr style="background-color:#259fea">
 				<div class="row">
@@ -119,8 +113,8 @@
 				<h4><a href="https://www.thebearsenal.com/apps/home" >Apps</a></h4>
 				<hr style="background-color:#259fea">	
 				<ul class="list-group">
-                        <li><a href="https://www.thebearsenal.com/apps/Online-BMI-Calculator"><p>Online BMI Calculator</p></a></li>
-                        <li><a href="https://www.thebearsenal.com/apps/Extract-Emails-Phone-Numbers"><p>Phone, Email Extractor</p></a></li>
+                        <li><a href="https://www.thebearsenal.com/apps/Online-BMI-Calculator"><p>BMI Calculator</p></a></li>
+                        <li><a href="https://www.thebearsenal.com/apps/Extract-Emails-From-Text.html"><p>Email Extractor</p></a></li>
 				</ul>
 			</div>
 		</div>	
