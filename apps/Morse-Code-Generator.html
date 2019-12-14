@@ -39,9 +39,78 @@
 	</style>
 	<script>
 		function morse_gen() {
-			let io_text = document.getElementById("io_data").value;
-
-			document.getElementById("morse_code_op").innerHTML += ""
+			let io_text = document.getElementById("io_data").value.split('');
+			document.getElementById("morse_code_op").innerHTML  = ""
+			let con = ""
+			for (let each of io_text){
+				con+=morse_conv(each)
+			}
+			document.getElementById("morse_code_op").innerHTML = con
+		}
+		function copy_clipboard(){
+			let content = document.getElementById("morse_code_op")
+			content.select()
+			document.execCommand("Copy");
+		}
+		function morse_conv(each){
+			let morse_map = {
+				'a': '.-',
+				'b': '-...',
+				'c': '-.-.',
+				'd': '-..',
+				'e': '.',
+				'f': '..-.',
+				'g': '--.',
+				'h': '....',
+				'i': '..',
+				'j': '.---',
+				'k': '-.-',
+				'l': '.-..',
+				'm': '--',
+				'n': '-.',
+				'o': '---',
+				'p': '.--.',
+				'q': '--.-',
+				'r': '.-.',
+				's': '...',
+				't': '-',
+				'u': '..-',
+				'v': '...-',
+				'w': '.--',
+				'x': '-..-',
+				'y': '-.--',
+				'z': '--..',
+				'1': '.----',
+				'2': '..---',
+				'3': '...--',
+				'4': '....-',
+				'5': '.....',
+				'6': '-....',
+				'7': '--...',
+				'8': '---..',
+				'9': '----.',
+				'0': '-----',
+				'.': '.-.-.-',
+				',': '--..--',
+				'?': '..--..',
+				"'": '.----.',
+				'!': '-.-.--',
+				'/': '-..-.',
+				'(': '-.--.',
+				')': '-.--.-',
+				'&': '.-...',
+				':': '---...',
+				';': '-.-.-.',
+				'=': '-...-',
+				'+': '.-.-.',
+				'-': '-....-',
+				'_': '..--.-',
+				'"': '.-..-.',
+				'$': '...-..-',
+				'@': '.--.-.',
+				' ': ' '
+			}
+			return (morse_map[each])
 		}
 	</script>
 </head>
@@ -62,7 +131,8 @@
 
 				<h3><small>Text to Morse Code Online</small></h3>
 				<hr style="background-color:#259fea">
-				<p></p>
+				<p>Morse code is an encode/decode mechanism invented for the sake of tele-communication. All English alphabets and numbers are represented
+					with '.' dots and '-' dashes which corresponds to two signals with different frequencies. </p>
 
                 <hr style="background-color:#259fea">
                 <div class="row">
@@ -75,12 +145,14 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="morse_code_op"><h4> Morse Code:</h4></label>
-                            <textarea class="form-control" id="morse_code_op" rows="6"></textarea>
+                            <textarea readonly class="form-control" id="morse_code_op" rows="6"></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <button type="button" id="convert_btn" class="btn btn-primary" onclick="morse_gen();"> Convert</button>                    
+					<button type="button" id="convert_btn" class="btn btn-primary" onclick="morse_gen();"> Convert</button>                  
+					<button type="button" class="btn  btn-primary  float-right" onclick="copy_clipboard();"> Tap to Copy</button>                    
+  
                 </div>
 
 				<hr style="background-color:#259fea">
