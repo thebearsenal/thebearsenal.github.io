@@ -40,8 +40,26 @@
 	</style>
 	<script>
 		function extract() {
+			let f1=0
+			let io_text = document.getElementById("io_data").value;
+			let io_array = io_text.split(/\s+/g);
+			document.getElementById("email_op").innerHTML  = ""
+			for (let each of io_array){
+				console.log(each)
+				if(validate_email(each)){
+					f1=1
+					document.getElementById("email_op").innerHTML += each+"<br>"
+				}
+			}
+			if(f1==0){
+				document.getElementById("email_op").innerHTML  = "None"
+			}
 
-			document.getElementById("result").innerHTML = "BMI Index = "+Math.round(bmi*1000)/1000;
+		}
+		function validate_email(email) 
+		{
+    		let re = /\S+@\S+\.\S+/;
+    		return re.test(email);
 		}
 	</script>
 </head>
