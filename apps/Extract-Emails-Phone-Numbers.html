@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Online-BMI-Calculator</title>
+    <title>Extract Phone nos, Emails from Text Online</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BMI calculator online from height and weight">
@@ -31,6 +31,7 @@
 	</script>
         <link rel="icon" href="../img/logo.png">
 	<style>
+        body    {font-family: 'Times New Roman', Times, serif;}
 		p    {font-family: 'Times New Roman', Times, serif;}
 		label    {font-family: 'Times New Roman', Times, serif;}
 		h2    {font-family: 'Times New Roman', Times, serif;}
@@ -61,43 +62,29 @@
 		<div class="row">
 			<div class="col-sm-9">
 
-				<h3>Online BMI Calculator</h3>
+				<h3>Extract Emails and Phone Numbers from Text</h3>
 				<hr style="background-color:#259fea">
-				<p>BMI or Body Mass Index is a mathematical relationship between a person's weight and height. BMI measure indicates the health status of that particular person.</p>
-				<p>Formula for BMI - Weight(kgs)/sq. Height(m^2)</p>
-				<form>
-    				<div class="form-group col-sm-12">
-						<div class="row">
-							<div class="col-sm-4">
-      							<label for="height">Height in CMs:</label>
-				      			<input type="number" class="form-control" id="height">
-							</div>
-							<div class="col-sm-4">
-      							<label for="weight">Weight in KGs:</label>
-				      			<input type="number" class="form-control" id="weight">
-							</div>
-							<div class="col-sm-4">
-      							<br>
-				      			<button type="button" id="cal" class="btn" onclick="bmi_calculator();"> Calculate BMI</button>
-							</div>
-						</div>
-					</div>
-				</form>
-				<hr style="background-color:#259fea">
-				<div>
-					<h4>Result:</h4>
-					<p id="result"></p>
-				</div>		
-				<hr style="background-color:#259fea">
-				<div >
-					<h4>Check how healthy you are:</h4>
-					<p>
-						Below 18.5    -> UnderWeight <br>
-						18.5 - 24.9   -> Healthy <br>
-						25 - 29.9     -> OverWeight <br>
-						30 & Above    -> Obese
-					</p>
-				</div>
+				<p>Dealing with unformatted text data is always time consuming. With the help of this application you can extract contact details
+                      like Emails, Phone Numbers from a piece of text.</p>
+
+                <hr style="background-color:#259fea">
+
+                <div class="form-group">
+                        <label for="io_data"><h4> Text Input:</h4></label>
+                        <textarea class="form-control" id="io_data" rows="6"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="start" class="btn btn-primary" onclick="extract();"> Extract</button>                    
+                </div>
+                <hr style="background-color:#259fea">
+                <h4>Emails Found:</h4>
+                <p id="email_op"></p>
+
+                <hr style="background-color:#259fea">
+
+                <h4>Phone Numbers Found:</h4>
+                <p id="ph_op"></p>
+
 				<hr style="background-color:#259fea">
 				<div class="row">
 					<div class="col-2">
@@ -132,9 +119,8 @@
 				<h4><a href="https://www.thebearsenal.com/apps/home" >Apps</a></h4>
 				<hr style="background-color:#259fea">	
 				<ul class="list-group">
-						<li><a href="https://www.thebearsenal.com/apps/Online-BMI-Calculator"><p>Online BMI Calculator</p></a></li>
-						<li><a href="https://www.thebearsenal.com/apps/Extract-Emails-Phone-Numbers"><p>Phone, Email Extractor</p></a></li>
-
+                        <li><a href="https://www.thebearsenal.com/apps/Online-BMI-Calculator"><p>Online BMI Calculator</p></a></li>
+                        <li><a href="https://www.thebearsenal.com/apps/Extract-Emails-Phone-Numbers"><p>Phone, Email Extractor</p></a></li>
 				</ul>
 			</div>
 		</div>	
