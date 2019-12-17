@@ -46,7 +46,15 @@
             element: document.getElementById('qr'),
             value: ip_text
             });
+            document.getElementById("save_qr").innerHTML = '<button type="button"  class="btn  btn-primary" onclick="download_qr();"> Download QR Code</button>'
+
 		}
+        function download_qr(){
+            let link = document.createElement('a');
+            link.download = 'qr_code.png';
+            link.href = document.getElementById('qr').toDataURL()
+            link.click();
+        }
 	</script>
 </head>
 <body style="">
@@ -80,6 +88,7 @@
                 <div class="">
                     <br>
                     <canvas id="qr"></canvas>
+                    <div id="save_qr"></div>
                 </div>
 
 				<hr style="background-color:#259fea">
