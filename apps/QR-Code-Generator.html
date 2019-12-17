@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Online-BMI-Calculator</title>
+    <title>Generate QR Code Online</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BMI calculator online from height and weight">
@@ -13,7 +13,8 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33383432-3"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -36,13 +37,15 @@
 		h2    {font-family: 'Times New Roman', Times, serif;}
 		h3    {font-family: 'Times New Roman', Times, serif;}
 		h4    {font-family: 'Times New Roman', Times, serif;}
-	</style>
+    </style>
+    
 	<script>
-		function bmi_calculator() {
-			let w = document.getElementById("weight").value
-			let h = document.getElementById("height").value/100
-			let bmi = w/(h*h)
-			document.getElementById("result").innerHTML = "BMI Index = "+Math.round(bmi*1000)/1000;
+		function qr_code_generator() {
+            let ip_text = document.getElementById("ip_text").value
+            let qr = new QRious({
+            element: document.getElementById('qr'),
+            value: ip_text
+            });
 		}
 	</script>
 </head>
@@ -61,43 +64,24 @@
 		<div class="row">
 			<div class="col-sm-8">
 
-				<h3><small>BMI Calculator</small> </h3>
+				<h3><small>QR Code Generator</small></h3>
 				<hr style="background-color:#259fea">
-				<p>BMI or Body Mass Index is a mathematical relationship between a person's weight and height. BMI measure indicates the health status of that particular person.</p>
-				<p>Formula for BMI - Weight(kgs)/sq. Height(m^2)</p>
-				<form>
-    				<div class="form-group col-sm-12">
-						<div class="row">
-							<div class="col-sm-4">
-      							<label for="height">Height in CMs:</label>
-				      			<input type="number" class="form-control" id="height">
-							</div>
-							<div class="col-sm-4">
-      							<label for="weight">Weight in KGs:</label>
-				      			<input type="number" class="form-control" id="weight">
-							</div>
-							<div class="col-sm-4">
-      							<br>
-				      			<button type="button" id="cal" class="btn  btn-primary" onclick="bmi_calculator();"> Calculate BMI</button>
-							</div>
-						</div>
-					</div>
-				</form>
-				<hr style="background-color:#259fea">
-				<div>
-					<h4>Result:</h4>
-					<p id="result"></p>
-				</div>		
-				<hr style="background-color:#259fea">
-				<div >
-					<h4>Check how healthy you are:</h4>
-					<p>
-						Below 18.5    -> UnderWeight <br>
-						18.5 - 24.9   -> Healthy <br>
-						25 - 29.9     -> OverWeight <br>
-						30 & Above    -> Obese
-					</p>
-				</div>
+				<p>QR Code or Quick Response Code is a 2 dimensional bar code which encodes words,number, links etc. This QR code generator convert input 
+                    string to corresponding QR Code with the help of QRious JS library. </p>
+
+                <hr style="background-color:#259fea">
+                
+                    <label for="ip_text">Input Text/Link :</label>
+                    <input type="text" class="form-control" id="ip_text">
+                <div class="">
+                        <br>
+                        <button type="button" id="cal" class="btn  btn-primary" onclick="qr_code_generator();"> Generate</button>
+                </div>
+                <div class="">
+                    <br>
+                    <canvas id="qr"></canvas>
+                </div>
+
 				<hr style="background-color:#259fea">
 				<div class="row">
 					<div class="col-2">
@@ -132,13 +116,11 @@
 				<h4><a href="https://www.thebearsenal.com/apps/home" >Apps</a></h4>
 				<hr style="background-color:#259fea">	
 				<ul class="list-group">
-					<li><a href="https://www.thebearsenal.com/apps/QR-Code-Generator"><p>QR Code Generator</p></a></li>
+                    <li><a href="https://www.thebearsenal.com/apps/QR-Code-Generator"><p>QR Code Generator</p></a></li>
 					<li><a href="https://www.thebearsenal.com/apps/Find-Permutation-and-Combination-Online"><p>Permutation & Combination</p></a></li>
 					<li><a href="https://www.thebearsenal.com/apps/Morse-Code-Generator"><p>Morse Code Generator</p></a></li>
-
-                        <li><a href="https://www.thebearsenal.com/apps/Online-BMI-Calculator"><p>BMI Calculator</p></a></li>
-                        <li><a href="https://www.thebearsenal.com/apps/Extract-Emails-From-Text.html"><p>Email Extractor</p></a></li>
-
+					<li><a href="https://www.thebearsenal.com/apps/Online-BMI-Calculator"><p>BMI Calculator</p></a></li>
+					<li><a href="https://www.thebearsenal.com/apps/Extract-Emails-From-Text.html"><p>Email Extractor</p></a></li>
 				</ul>
 			</div>
 		</div>	
