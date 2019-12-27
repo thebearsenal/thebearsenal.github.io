@@ -13,7 +13,8 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33383432-3"></script>
 	<script>
@@ -117,14 +118,7 @@
 			<div class="col-sm-3">
 				<h4><a href="https://www.thebearsenal.com/" >Apps</a></h4>
 				<hr style="background-color:#259fea">	
-				<ul class="list-group">
-					<li><a href="https://www.thebearsenal.com/apps/NZ_PostCode_Finder">NZ Post Code Finder</a></li>
-					<li><a href="https://www.thebearsenal.com/apps/QR-Code-Generator">QR Code Generator</a></li>
-					<li><a href="https://www.thebearsenal.com/apps/Bar-Code-Generator">Bar Code Generator</a></li>
-					<li><a href="https://www.thebearsenal.com/apps/Find-Permutation-and-Combination-Online">Permutation & Combination</a></li>
-					<li><a href="https://www.thebearsenal.com/apps/Morse-Code-Generator">Morse Code Generator</a></li>
-					<li><a href="https://www.thebearsenal.com/apps/Online-BMI-Calculator">BMI Calculator</a></li>
-					<li><a href="https://www.thebearsenal.com/apps/Extract-Emails-From-Text.html">Email Extractor</a></li>
+				<ul id="sidebar_list" class="list-group">
 				</ul>
 			</div>
 		</div>	
@@ -136,4 +130,8 @@
         </div>
     </footer>
 </body>
+<script src="../js/common.js"></script>
+<script>
+	generate_template()
+</script>
 </html>
