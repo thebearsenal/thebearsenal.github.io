@@ -36,5 +36,3 @@ function load_ads()
 		gtag('js', new Date());
 		gtag('config', 'UA-33383432-3');
 }
-
-
