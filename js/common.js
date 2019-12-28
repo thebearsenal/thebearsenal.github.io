@@ -14,7 +14,8 @@ function generate_template(){
     document.getElementById("sidebar_list").innerHTML = '<h4><a href="https://www.thebearsenal.com/apps/home" >Apps</a></h4><hr style="background-color:#259fea"><ul id="sidebar_list" class="list-group"><li><a href="https://www.thebearsenal.com/apps/NZ-PostCode-Finder">NZ Post Code Finder</a></li><li><a href="https://www.thebearsenal.com/apps/QR-Code-Generator">QR Code Generator</a></li><li><a href="https://www.thebearsenal.com/apps/Bar-Code-Generator">Bar Code Generator</a></li><li><a href="https://www.thebearsenal.com/apps/Find-Permutation-and-Combination-Online">Permutation & Combination</a></li><li><a href="https://www.thebearsenal.com/apps/Morse-Code-Generator">Morse Code Generator</a></li><li><a href="https://www.thebearsenal.com/apps/Online-BMI-Calculator">BMI Calculator</a></li><li><a href="https://www.thebearsenal.com/apps/Extract-Emails-From-Text.html">Email Extractor</a></li></ul>'
     document.getElementById("social_plugins").innerHTML = '<div class="col-2"><a href="https://github.com/dipinpjoseph" target="_blank"><i class="fa fa-github" style="font-size:40px;"></i></a></div><div class="col-2"><a href="https://www.linkedin.com/in/dipinpjoseph/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:40px;"></i></a></div><div class="col-2"><a href="https://twitter.com/thebearsenal" target="_blank"><i class="fa fa-twitter" style="font-size:40px;"></i></a></div><div class="col-2"><a href="https://www.instagram.com/thebearsenal/" target="_blank"><i class="fa fa-instagram" style="font-size:40px;"></i></a></div><div class="col-2"><a href="https://www.facebook.com/TheBeArsenal/" target="_blank"><i class="fa fa-facebook-square" style="font-size:40px;"></i></a></div><div class="col-2"><a href="https://www.youtube.com/channel/UCvfjHPhi9Db_tFZKIbje2zw/" target="_blank"><i class="fa fa-youtube-square" style="font-size:40px;"></i></a></div>'
     document.getElementById("page_footer").innerHTML = '<div class="footer-copyright text-center py-3" style="font-family: \'Times New Roman\', Times, serif;">&copy; 2019 Copyright:<a href="https://www.thebearsenal.com" style="font-family: \'Times New Roman\', Times, serif;"> The Beginner&apos;s Arsenal</a></div>'
- 
+    loadHead('<script data-ad-client="ca-pub-3600373850128255" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>')
+    loadHead('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33383432-3"></script>')
     load_ads()
 }
 function loadHead(data)
@@ -26,13 +27,7 @@ function load_ads()
 	window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-	
 		gtag('config', 'UA-33383432-3');
-	
-		(adsbygoogle = window.adsbygoogle || []).push({
-			google_ad_client: "ca-pub-3600373850128255",
-				  enable_page_level_ads: true
-         });
 }
 
 
