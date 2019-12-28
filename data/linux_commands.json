@@ -1,0 +1,6 @@
+linux_commands='[{"Topic" : "Create bootable USB using \'dd\' command.", "Command" : " sudo dd bs=4M if=path/to/input.iso of=/dev/sd<?> conv=fdatasync  status=progress", "Comment" : "Replace input file path and drive letter(sda/b/c). Use \'lsblk\' if confused.<br> Source - https://askubuntu.com/a/377561"}]'
+
+
+
+
+
