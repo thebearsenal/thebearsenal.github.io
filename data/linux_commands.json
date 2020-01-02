@@ -1,4 +1,4 @@
-linux_commands='[{"Topic" : "Create bootable USB using \'dd\' command.", "Command" : " sudo dd bs=4M if=path/to/input.iso of=/dev/sd<?> conv=fdatasync  status=progress", "Comment" : "Replace input file path and drive letter(sda/b/c). Use \'lsblk\' if confused.<br> Source - https://askubuntu.com/a/377561"}]'
+linux_commands='[{"Topic" : "Create bootable USB using \'dd\' command.", "Command" : " sudo dd bs=4M if=path/to/input.iso of=/dev/sd<?> conv=fdatasync  status=progress", "Comment" : "Replace input file path and drive letter(sda/b/c). Use \'lsblk\' if confused.<br> Source - https://askubuntu.com/a/377561"},{"Topic" : "Install .deb file in Linux.", "Command" : " sudo dpkg -i /path/a.deb ", "Comment" : "Use \'sudo apt install -f\' for any missing dependencies.<br> Source - https://unix.stackexchange.com/a/159114"}]'
 
 
 

@@ -13,7 +13,7 @@ function sidebar_elite_list(){
     '<hr style="background-color:#259fea">'+
     '<ul id="sidebar_list" class="list-group">'+
     '<li><a href="https://www.thebearsenal.com/apps/SQL-Commands-List">SQL Commands</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/Frequent-Linux-Commands-List">Linux Commands</a></li>'+
+    '<li><a href="https://www.thebearsenal.com/apps/Frequent-Linux-Commands-List">Linux Hacks</a></li>'+
     '</ul>'
      
 }
