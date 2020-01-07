@@ -14,6 +14,7 @@ function sidebar_elite_list(){
     '<ul id="sidebar_list" class="list-group">'+
     '<li><a href="https://www.thebearsenal.com/apps/SQL-Commands-List">SQL Commands</a></li>'+
     '<li><a href="https://www.thebearsenal.com/apps/Frequent-Linux-Commands-List">Linux Hacks</a></li>'+
+    '<li><a href="https://www.thebearsenal.com/apps/python-tips-and-tricks">Python Short Notes</a></li>'+
     '</ul>'
      
 }

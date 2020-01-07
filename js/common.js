@@ -21,6 +21,7 @@ function generate_template(){
     '<hr style="background-color:#259fea"><ul id="sidebar_list" class="list-group">'+
     '<li><a href="https://www.thebearsenal.com/apps/The-Elite-List-Home">The Elite List - Tech Handbook</a></li>'+
     '<li><a href="https://www.thebearsenal.com/apps/NZ-PostCode-Finder">NZ Post Code Finder</a></li>'+
+    '<li><a href="https://www.thebearsenal.com/apps/Pincodes-India">PinCode Finder - India</a></li>'+
     '<li><a href="https://www.thebearsenal.com/apps/QR-Code-Generator">QR Code Generator</a></li>'+
     '<li><a href="https://www.thebearsenal.com/apps/Bar-Code-Generator">Bar Code Generator</a></li>'+
     '<li><a href="https://www.thebearsenal.com/apps/Find-Permutation-and-Combination-Online">Permutation & Combination</a></li>'+
