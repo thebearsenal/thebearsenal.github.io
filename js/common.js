@@ -21,7 +21,6 @@ function generate_template(){
     '<hr style="background-color:#259fea"><ul id="sidebar_list" class="list-group">'+
     '<li><a href="https://www.thebearsenal.com/apps/The-Elite-List-Home">The Elite List - Tech Handbook</a></li>'+
     '<li><a href="https://www.thebearsenal.com/apps/NZ-PostCode-Finder">NZ Post Code Finder</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/Pincodes-India">PinCode Finder - India</a></li>'+
     '<li><a href="https://www.thebearsenal.com/apps/QR-Code-Generator">QR Code Generator</a></li>'+
     '<li><a href="https://www.thebearsenal.com/apps/Bar-Code-Generator">Bar Code Generator</a></li>'+
     '<li><a href="https://www.thebearsenal.com/apps/Find-Permutation-and-Combination-Online">Permutation & Combination</a></li>'+
@@ -35,12 +34,13 @@ function generate_template(){
     '<div class="col-2"><a href="https://www.facebook.com/TheBeArsenal/" target="_blank"><i class="fa fa-facebook-square" style="font-size:40px;"></i></a></div>'+
     '<div class="col-2"><a href="https://www.youtube.com/channel/UCvfjHPhi9Db_tFZKIbje2zw/" target="_blank"><i class="fa fa-youtube-square" style="font-size:40px;"></i></a></div>'
     document.getElementById("page_footer").innerHTML = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
-    '<!-- TheBeArsenal_Apps_Hori_Above_Footer --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600373850128255" data-ad-slot="3376708233" data-ad-format="auto" data-full-width-responsive="true"></ins>'+
+    '<!-- TheBeArsenal_Apps_Hori_Above_Footer -->'+
+    '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600373850128255" data-ad-slot="3376708233" data-ad-format="auto" data-full-width-responsive="true"></ins>'+
     '<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>'+
     '<div class="footer-copyright text-center py-3" style="font-family: \'Times New Roman\', Times, serif;">&copy; 2020 Copyright:<a href="https://www.thebearsenal.com" style="font-family: \'Times New Roman\', Times, serif;"> The Beginner&apos;s Arsenal</a></div>'
     loadHead('<script data-ad-client="ca-pub-3600373850128255" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>')
     loadHead('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33383432-3"></script>')
-    load_ads()
+    //load_ads()
 }
 function loadHead(data)
 {    
