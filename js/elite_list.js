@@ -13,8 +13,8 @@ function sidebar_elite_list(){
     '<hr style="background-color:#259fea">'+
     '<ul id="sidebar_list" class="list-group">'+
     '<li><a href="/apps/SQL-Commands-List">SQL Commands</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/Frequent-Linux-Commands-List">Linux Hacks</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/python-tips-and-tricks">Python Short Notes</a></li>'+
+    '<li><a href="/apps/Frequent-Linux-Commands-List">Linux Hacks</a></li>'+
+    '<li><a href="/apps/python-tips-and-tricks">Python Short Notes</a></li>'+
     '</ul>'
      
 }

@@ -19,14 +19,14 @@ function generate_template(){
     '<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>'+
     '<h4><a href="https://www.thebearsenal.com/apps/home" >Apps</a></h4>'+
     '<hr style="background-color:#259fea"><ul id="sidebar_list" class="list-group">'+
-    '<li><a href="/The-Elite-List-Home">The Elite List - Tech Handbook</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/NZ-PostCode-Finder">NZ Post Code Finder</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/QR-Code-Generator">QR Code Generator</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/Bar-Code-Generator">Bar Code Generator</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/Find-Permutation-and-Combination-Online">Permutation & Combination</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/Morse-Code-Generator">Morse Code Generator</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/Online-BMI-Calculator">BMI Calculator</a></li>'+
-    '<li><a href="https://www.thebearsenal.com/apps/Extract-Emails-From-Text.html">Email Extractor</a></li></ul>'
+    '<li><a href="/apps/The-Elite-List-Home">The Elite List - Tech Handbook</a></li>'+
+    '<li><a href="/apps/NZ-PostCode-Finder">NZ Post Code Finder</a></li>'+
+    '<li><a href="/apps/QR-Code-Generator">QR Code Generator</a></li>'+
+    '<li><a href="/apps/Bar-Code-Generator">Bar Code Generator</a></li>'+
+    '<li><a href="/apps/Find-Permutation-and-Combination-Online">Permutation & Combination</a></li>'+
+    '<li><a href="/apps/Morse-Code-Generator">Morse Code Generator</a></li>'+
+    '<li><a href="/apps/Online-BMI-Calculator">BMI Calculator</a></li>'+
+    '<li><a href="/apps/Extract-Emails-From-Text.html">Email Extractor</a></li></ul>'
     document.getElementById("social_plugins").innerHTML = '<div class="col-2"><a href="https://github.com/dipinpjoseph" target="_blank"><i class="fa fa-github" style="font-size:40px;"></i></a></div>'+
     '<div class="col-2"><a href="https://www.linkedin.com/in/dipinpjoseph/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:40px;"></i></a></div>'+
     '<div class="col-2"><a href="https://twitter.com/thebearsenal" target="_blank"><i class="fa fa-twitter" style="font-size:40px;"></i></a></div>'+
