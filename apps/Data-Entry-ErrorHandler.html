@@ -28,7 +28,7 @@
 		if (xhr.status != 200) { 
 				alert(`Error ${xhr.status}: ${xhr.statusText}`); 
 		} else { 
-			document.getElementById("save_data").innerHTML = '<br><p>Error-Solution added successfully</p>'
+			document.getElementById("save_data").innerHTML = '<br><p>'+xhr.responseText+'</p>'
 			}
 		};
         
