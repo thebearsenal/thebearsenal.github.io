@@ -15,7 +15,6 @@
 	<script>
 		function add_entry() {
 		
-		
 		let xhr = new XMLHttpRequest();
 		xhr.open("POST", "https://errorhandlerfapp.azurewebsites.net/api/errorhandlertrigger", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
@@ -23,7 +22,7 @@
 		error: document.getElementById("error").value,
 		sol: document.getElementById("sol").value,
 		comment: document.getElementById("comment").value,
-		tag: document.getElementById("tag")
+		tag: document.getElementById("tag").value
 		}));
 		xhr.onload = function() {
 		if (xhr.status != 200) { 
@@ -57,7 +56,7 @@
                     <input type="text" class="form-control" id="comment">
 					<br>
 					<label for="tag">Category : </label>
-					<select name="tag" method="GET" action="/">
+					<select id="tag">
 						<option value="Linux" SELECTED class="form-control col-sm-4" required>Linux</option>"
 						<option value="Python" class="form-control col-sm-4" required>Python</option>"
 						<option value="C#" class="form-control col-sm-4" required>C#</option>"
