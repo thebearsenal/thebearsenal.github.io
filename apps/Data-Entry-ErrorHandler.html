@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data Entry - Error Handler</title>
+    <meta name="description" content="Online Bar Code Generator">
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3600373850128255",
+            enable_page_level_ads: true
+        });
+    </script>
+	<script src="../js/common.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+	<script>
+		function add_entry() {
+		
+		
+		let xhr = new XMLHttpRequest();
+		xhr.open("GET", "https://errorhandlerfapp.azurewebsites.net/api/errorhandlertrigger", true);
+		xhr.setRequestHeader('Content-Type', 'application/json');
+		xhr.send(JSON.stringify({
+		error: document.getElementById("error").value,
+		sol: document.getElementById("sol").value,
+		comment: document.getElementById("comment").value,
+		tag: document.getElementById("tag")
+		}));
+		xhr.onload = function() {
+		if (xhr.status != 200) { 
+				alert(`Error ${xhr.status}: ${xhr.statusText}`); 
+		} else { 
+			document.getElementById("save_data").innerHTML = '<br><p>Error-Solution added successfully</p>'
+			}
+		};
+        
+		}
+	</script>
+</head>
+<body style="">
+    <div class="container">
+		<br>
+        <div id="header_tag" class="row"></div>
+		<div class="row">
+			<div class="col-sm-8">
+
+				<h1><small><small>Data Entry - Error Handler</small></small></h1>
+				<hr style="background-color:#259fea">
+				<p>Page dedicated for data input for ErrorHandler. Please follow the structure, "Error->Solution->Comment->Tag". The format is plain text or HTML.</p>
+
+                <hr style="background-color:#259fea">
+                
+                    <label for="error">Error (Please remove user specific params and replace with {}) :</label>
+                    <input type="text" class="form-control" id="error">
+					<label for="sol">Solution :</label>
+                    <input type="text" class="form-control" id="sol">
+					<label for="comment">Comment (Explanation of error and best practice for future.) :</label>
+                    <input type="text" class="form-control" id="comment">
+					<br>
+					<label for="tag">Category : </label>
+					<select name="tag" method="GET" action="/">
+						<option value="Linux" SELECTED class="form-control col-sm-4" required>Linux</option>"
+						<option value="Python" class="form-control col-sm-4" required>Python</option>"
+						<option value="C#" class="form-control col-sm-4" required>C#</option>"
+					</select>
+                <div class="">
+                        <br>
+                        <button type="button" id="cal" class="btn  btn-primary" onclick="add_entry();"> Add Entry</button>
+                </div>
+                <div class="">
+                    <br>
+                    <canvas id="bar"></canvas>
+                    <div id="save_data"></div>
+                </div>
+
+				<hr style="background-color:#259fea">
+				<div id="social_plugins" class="row"></div>
+				<hr style="background-color:#259fea">
+			</div>
+			<div class="col-sm-1" style="border-left: 1px solid #259fea; "></div>
+			<div id="sidebar_list" class="col-sm-3"></div>
+		</div>	
+	</div>
+	
+    <footer id="page_footer" class="page-footer"></footer>
+</body>
+<script>
+	generate_template()
+</script>
+</html>
