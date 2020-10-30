@@ -17,7 +17,7 @@
 		
 		
 		let xhr = new XMLHttpRequest();
-		xhr.open("GET", "https://errorhandlerfapp.azurewebsites.net/api/errorhandlertrigger", true);
+		xhr.open("POST", "https://errorhandlerfapp.azurewebsites.net/api/errorhandlertrigger", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify({
 		error: document.getElementById("error").value,
@@ -68,7 +68,6 @@
                 </div>
                 <div class="">
                     <br>
-                    <canvas id="bar"></canvas>
                     <div id="save_data"></div>
                 </div>
 
